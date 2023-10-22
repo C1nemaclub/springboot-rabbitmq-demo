@@ -1,0 +1,17 @@
+#spring:
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest
+rabbitmq:
+  queue:
+    name: cinema_queue
+    json:
+        name: cinema_json_queue
+  exchange:
+    name: cinema_exchange
+  routing:
+    key: cinema_routing_key
+    json:
+        key: cinema_json_routing_key
